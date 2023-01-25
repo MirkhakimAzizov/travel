@@ -1,3 +1,58 @@
 .footer {
     width: 100%;
+    background-color: rgb(0, 0, 0);
+    &__inner {
+        height: 350px;
+    }
+    &__top {
+        padding: 42px 70px;
+        @include flex(row, start, space-between);
+    }
+    &__list {
+        @include flex(column, start, space-between);
+        gap: 15px;
+        &--item {
+            &-link {
+                display: block;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 17px;
+                color: #808080;
+                text-decoration: none;
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+            }
+        }
+    }
+    &__bottom {
+        padding: 10px 70px 20px 305px;
+        @include flex(row, center, space-between);
+        &-kod {
+            padding: 10px 15px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 17px;
+            color: #808080;
+            border: 1px solid #808080;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
+        &--link {
+            width: 160px;
+            @include flex(row, start, space-between);
+        }
+        &-info {
+            padding-left: 300px;
+            padding-bottom: 42px;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 11px;
+            line-height: 14px;
+            color: #808080;
+        }
+    }
 }

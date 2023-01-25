@@ -1,0 +1,52 @@
+.travel {
+    &__inner {
+        padding: 80px 0 140px 70px;
+    }
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 37px;
+        color: #000000;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    &__list {
+        padding-top: 16px;
+        @include flex(row, start, space-between);
+        gap: 16px;
+        list-style: none;
+        &--item {
+            padding: 16px;
+            @include flex(column, start, space-between);
+            background: #FFFFFF;
+            box-shadow: 0px 4px 16px rgba(158, 158, 158, 0.25);
+            border-radius: 16px;
+            &-title {
+                padding: 24px 0 8px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 31px;
+                color: #000000;
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+            }
+            &-info {
+                padding: 4px 0;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: #000000;
+                text-decoration: none;
+                opacity: 0.5;
+                flex: none;
+                order: 1;
+                flex-grow: 0;
+            }
+        }
+    }
+}

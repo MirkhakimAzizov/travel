@@ -1,0 +1,108 @@
+.info {
+    background-image: url(../../images/info_bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    &__inner {
+        padding: 57px 0 0 137px;
+        @include flex(row, start, space-between);
+    }
+    &__left {
+        padding: 0;
+    }
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 55px;
+        color: #FFFFFF;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    &__text {
+        padding: 24px 0 40px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        color: #FFFFFF;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+    &__box {
+        @include flex(row, start, space-between);
+        &-search {
+            padding: 20px 24px;
+            width: 462px;
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(16px);
+            border-radius: 16px;
+            border: none;
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+            &::placeholder {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 18px;
+                color: #FFFFFF;
+                opacity: 0.7;
+                flex: none;
+                order: 1;
+                flex-grow: 0;
+            }
+        }
+        &-btn {
+            position: absolute;
+            top: 7px;
+            right: 20px;
+            padding: 12px 65px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 18px;
+            color: #2659C3;
+            text-decoration: none;
+            background: #FFFFFF;
+            border-radius: 32px;
+            opacity: 0.7;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
+    }
+    &__box__right {
+        &-link {
+            text-decoration: none;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23px;
+            color: #FFFFFF;
+        }
+        &-link_bg {
+            margin-right: 32px;
+            display: inline-block;
+            padding: 8px 16px;
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(16px);
+            border-radius: 16px;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
+        &-text {
+            padding: 16px 0;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #FFFFFF;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
+    }
+}
